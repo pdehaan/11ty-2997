@@ -1,0 +1,18 @@
+{
+  "name": "11ty-2997",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "prebuild": "rm -rf www",
+    "build": "eleventy",
+    "format-www": "npx prettier www/**/*.php --parser=html --write --loglevel=silent",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

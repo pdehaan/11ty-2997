@@ -1,0 +1,14 @@
+---
+title: Studio
+layout: base
+---
+
+<h1>{{ title }}</h1>
+
+<h2>Readings!</h2>
+
+<ul>
+{%- for p in collections.readings %}
+  <li><a href="{{ p.url }}">{{ p.data.title }}</a></li>
+{%- endfor %}
+</ul>
