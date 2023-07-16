@@ -1,18 +1,27 @@
 {
   "name": "11ty-2997",
-  "version": "1.0.0",
   "description": "",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "bugs": {
+    "url": "https://github.com/pdehaan/11ty-2997/issues"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "devDependencies": {},
+  "homepage": "https://github.com/pdehaan/11ty-2997#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
   "main": "eleventy.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/11ty-2997.git"
+  },
   "scripts": {
-    "prebuild": "rm -rf www",
     "build": "eleventy",
     "format-www": "npx prettier www/**/*.php --parser=html --write --loglevel=silent",
+    "prebuild": "rm -rf www",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Peter deHaan <peter@deseloper.com>",
-  "license": "MPL-2.0",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
   }
 }
